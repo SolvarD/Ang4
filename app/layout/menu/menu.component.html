@@ -1,0 +1,8 @@
+﻿<nav>
+    <ul class="menu">
+        <!--*ngClass="{current: currentPath.match(elem.Url) != null}"-->
+        <li>
+            <a *ngFor="let elem of menu" href="{{elem.Url}}" (click)="alerFunc(elem.Label)">{{elem.Label}}</a>
+        </li>
+    </ul>
+</nav>    

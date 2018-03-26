@@ -1,7 +1,12 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-    selector: 'pokemon-app',
-    template: `<h1>Hello, Angular 4 !</h1>`,
+    selector: 'layout-app',
+    templateUrl: './app/layout/layout.component.html',
+    styleUrls: ['./app/css/style.css']
 })
-export class AppComponent { }
+export class AppComponent {
+    private router: any;
+
+}
